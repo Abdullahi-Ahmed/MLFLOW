@@ -1,0 +1,9 @@
+name: mlflow-local
+
+conda_env: my_env.yaml
+
+entry_points:
+  main:
+    parameters:
+      learning-rate: float
+    command: "python model.py {learning_rate}"
